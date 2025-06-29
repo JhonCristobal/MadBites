@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadBites Cake Shop</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Madbites Cake Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#cakes">Our Cakes</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Madbites, we create delicious cakes for all occasions. Each cake is made with love and the finest
+                ingredients. Whether it's a birthday, wedding, or any celebration, we have the perfect cake for you!</p>
+        </div>
+    </section>
+
+    <section id="cakes">
+        <div class="container">
+            <h2>Our Cakes</h2>
+            <div class="cake-gallery">
+                <div class="cake-item">
+                    <img src="chocolatecake.jpeg"" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich and moist chocolate cake made from premium cocoa.</p>
+                </div>
+                <div class="cake-item">
+                    <img src="vanilla.jpeg" alt="Vanilla Cake">
+                    <h3>Vanilla Cake</h3>
+                    <p>Classic vanilla cake with a buttery flavor and light texture.</p>
+                </div>
+                <div class="cake-item">
+                    <img src="red velvet.jpeg" alt="Red Velvet Cake">
+                    <h3>Red Velvet Cake</h3>
+                    <p>Delicious red velvet cake with cream cheese frosting.</p>
+                </div>
+                <!-- Add more cake items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="container">
+            <h2>Order Now</h2>
+            <form action="submit_order.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="cake">Select Cake:</label>
+                <select id="cake" name="cake" required>
+                    <option value="chocolate">Chocolate Cake</option>
+                    <option value="vanilla">Vanilla Cake</option>
+                    <option value="red-velvet">Red Velvet Cake</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="message">Special Requests:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information, feel free to reach out!</p>
+            <ul>
+                <li>Email: info@sweetdelights.com</li>
+                <li>Phone: (555) 123-4567</li>
+                <li>Location: MadBites Cake Shop, Dasmariñas City Cavite</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MadBites Cake Shop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
